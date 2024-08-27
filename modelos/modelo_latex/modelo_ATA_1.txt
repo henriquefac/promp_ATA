@@ -1,0 +1,142 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{array} % Para colunas com tamanhos específicos
+\usepackage{geometry} % Para controlar margens da página
+\usepackage{tabularx} % Para tabelas que ajustam à largura da página
+\usepackage{graphicx} % Para inserir imagens (se necessário)
+
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2.5cm}
+
+%cores
+\definecolor{maincolor}{HTML}{153D63}
+\definecolor{aux}{HTML}{F0A886}
+
+% Criar novo tipo de coluna
+\newcolumntype{T} {>{\centering\raggedright\arraybackslash}X}
+\newcolumntype{B}{>{\columncolor{maincolor}\centering\raggedright\arraybackslash}X}
+
+\begin{document}
+
+% Cabeçalho do Tribunal
+\begin{center}
+    \textbf{\LARGE Tribunal Regional Eleitoral do Ceará} \\
+    \vspace{0.5cm}
+    \textbf{\LARGE ATA DE REUNIÃO}
+\end{center}
+
+\vspace{1cm}
+
+% Tabela de informações da reunião
+\arrayrulecolor{aux}
+
+\setlength{\tabcolsep}{18pt} % Ajusta o espaçamento interno das colunas
+\renewcommand{\arraystretch}{2} % Ajusta a altura das linhas
+\centering
+\begin{tabularx}{\textwidth}{|>{\leavevmode\color{white}\hsize=0.5\hsize}B|>{\leavevmode\color{aux}\hsize=1.5\hsize}B|} % Colunas ajustadas à largura da página
+    \hline
+    \textbf{TÍTULO: } & \iffalse (Reunião de Avaliação de Projetos e Planejamento) \fi \\ [1ex] 
+    \hline
+    \textbf{DATA:} & 22 de agosto de 2024 \\ [1ex]
+    \hline
+    \textbf{HORÁRIO DE INÍCIO:} & 10:00h \\ [1ex]
+    \hline
+    \textbf{HORÁRIO DE TÉRMINO:} & 11:45h \\ [1ex]
+    \hline 
+    \textbf{AUTOR DA ATA:} & Ricardo Mendes Soares \\ [1ex]
+    \hline
+\end{tabularx}
+\vspace{1cm}
+
+% Tabela participantes da reunião
+\arrayrulecolor{black}
+
+\begin{tabularx}{\textwidth}{|T|}
+    \hline
+    \rowcolor{maincolor}
+    \textbf{\textcolor{white}{PARTICIPANTES DA REUNIÃO}}   \\[1ex] 
+    \hline
+    • Maria Lima - Coordenadora de RH \\ [1ex]
+    \hline
+    • Pedro Alves - Analista de Sistemas \\ [1ex]
+    \hline
+    • Juliana Ferreira - Consultora Jurídica \\ [1ex]
+    \hline
+    • Rafael Costa - Diretor de Tecnologia \\ [1ex]
+    \hline
+    • Daniela Oliveira - Assistente Administrativa \\ [1ex]
+    \hline
+\end{tabularx}
+
+\vspace{1cm}
+
+\begin{tabularx}{\textwidth}{|T|}
+    \hline
+    \rowcolor{maincolor}
+    \textbf{\textcolor{white}{OBJETIVO GERAL}}   \\[1ex] 
+    \hline
+    Discutir o progresso dos projetos de TI e planejar as próximas etapas. \\ [1ex]
+    \hline
+\end{tabularx}
+
+\vspace{1cm}
+
+\begin{tabularx}{\textwidth}{|p{0.1cm}|X|}
+    \hline
+    \rowcolor{maincolor}
+    \multicolumn{2}{|l|}{\textbf{\textcolor{white}{PAUTAS DA REUNIÃO}}} \\[1ex] 
+    \hline
+    1 & Avaliação dos projetos em andamento e seus resultados \\ [1ex]
+    \hline
+    2 & Planejamento para o próximo ciclo de projetos \\ [1ex]
+    \hline
+\end{tabularx}
+
+\vspace{1cm}
+
+\begin{tabularx}{\textwidth}{|p{2 cm}|X|}
+    \hline
+    \rowcolor{maincolor}
+    \multicolumn{2}{|l|}{\textbf{\textcolor{white}{ASSUNTOS DISCUTIDOS}}} \\[1ex] 
+    \hline
+    \textbf{Tema 1:} & \textbf{Avaliação dos Projetos de TI} \\
+    \hline
+    Conversa: & Ricardo Mendes Soares discutiu os resultados dos projetos em andamento, abordando as atualizações e os desafios enfrentados. A equipe de TI apresentou um relatório detalhado sobre o progresso. \\ 
+    \hline
+    Conclusão: & A avaliação mostrou progresso significativo, com algumas áreas necessitando de ajustes e melhorias. \\ [1ex]
+    \hline
+    \textbf{Tema 2:} & \textbf{Planejamento para o Próximo Ciclo de Projetos} \\
+    \hline
+    Conversa: & Foi discutido o planejamento das próximas etapas, incluindo a definição de novos objetivos e a alocação de recursos. A equipe de TI apresentou um cronograma preliminar. \\ 
+    \hline
+    Conclusão: & O planejamento foi aceito com ajustes mínimos. Foram definidos prazos e responsabilidades para a execução das próximas fases. \\ [1ex]
+    \hline
+\end{tabularx}
+
+\vspace{1cm}
+
+\begin{tabularx}{\textwidth}{|p{2 cm}|X|}
+    \hline
+    \rowcolor{maincolor} 
+    \multicolumn{2}{|l|}{\textbf{\textcolor{white}{DELIBERAÇÕES DA REUNIÃO}}} \\[1ex] 
+    \hline
+    \textbf{Decisão 1:} & Ajustes no Cronograma dos Projetos \\ 
+    \hline
+    Descrição: & Foi decidido ajustar o cronograma dos projetos em andamento para acomodar novas prioridades e desafios identificados. \\ 
+    \hline
+    Responsável:  & Ricardo Mendes Soares e equipe de TI \\ 
+    \hline
+    Prazo: & Até o final de agosto de 2024 \\ [1ex] 
+    \hline
+    \textbf{Decisão 2:} & Revisão e Atualização dos Objetivos dos Projetos \\ 
+    \hline
+    Descrição: & Os objetivos dos projetos serão revisados e atualizados para garantir alinhamento com as novas diretrizes e metas estabelecidas. \\ 
+    \hline
+    Responsável:  & Equipe de Planejamento e TI \\ 
+    \hline
+    Prazo: & Até o início de setembro de 2024 \\ [1ex] 
+    \hline
+\end{tabularx}
+
+\end{document}
